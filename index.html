@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Website</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section class="container">
+		<header>Registration Form</header>
+			<form method="POST" action="https://api.web3forms.com/submit" class="form">
+				<input type="hidden" name="access_key" value="484f015f-e0ab-4ced-a7f5-d384605a4431">
+				
+				<div class="input-box">
+					<label>Full Name</label>
+					<input type="text" placeholder="Enter Your Name" name="name" required>
+				</div>
+
+				<div class="input-box">
+					<label>Email Address</label>
+					<input type="email" placeholder="Enter Your Email" name="email" required>
+				</div>
+
+				<div class="colunm">
+					<div class="input-box">
+						<label>Phone Number</label>
+						<input type="tel" placeholder="Enter Your Phone Number" name="phone" required>
+					</div>
+					<div class="input-box">
+						<label>Birth Date</label>
+						<input type="date" name="date of birth" required>
+					</div>
+				</div>
+
+				<div class="gender-box">
+					<h3>Gender</h3>
+					<div class="gender-option">
+						<div class="gender">
+							<input type="radio" id="male" name="gender" value="Male">
+							<label for="male">Male</label>
+						</div>
+						<div class="gender">
+							<input type="radio" id="female" name="gender" value="Female">
+							<label for="female">Female</label>
+						</div>
+						<div class="gender">
+							<input type="radio" id="other" name="gender" value="Prefer not to say">
+							<label for="other">Prefer not to say</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="input-box address">
+						<label>Address</label>
+						<input type="text" placeholder="Enter Your Street address" name="Address" required>
+						<input type="text" placeholder="Enter Your Street address line 2" name="Address line 2">
+						<div class="colunm">
+							<div class="select-box">
+								<select name="country">
+									<option hidden>Country</option>
+									<option>America</option>
+									<option>Japan</option>
+									<option>India</option>
+									<option>France</option>
+								</select>
+							</div>
+						<input type="text" placeholder="Enter Your City" name="city" required>
+						</div>
+						<div class="colunm">						
+							<input type="text" placeholder="Enter Your region" name="region" required>
+							<input type="text" placeholder="Enter Your Postal code" name="postal_code" required>
+						</div>
+				</div>
+
+				<button type="submit">Submit</button>
+			</form>
+	</section>
+</body>
+</html>
