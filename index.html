@@ -8,12 +8,14 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="icon" href="icon.png"/>
 </head>
 <body>
 	<section class="container">
 		<header>Registration Form</header>
 			<form method="POST" action="https://api.web3forms.com/submit" class="form">
 				<input type="hidden" name="access_key" value="484f015f-e0ab-4ced-a7f5-d384605a4431">
+				<input type="hidden" name="subject" value="New Registration From your Form Websit">
 				
 				<div class="input-box">
 					<label>Full Name</label>
@@ -68,10 +70,10 @@
 									<option>France</option>
 								</select>
 							</div>
-						<input type="text" placeholder="Enter Your City" name="city" required>
+						<input type="text" placeholder="Enter Your State" name="State" required>
 						</div>
 						<div class="colunm">						
-							<input type="text" placeholder="Enter Your region" name="region" required>
+							<input type="text" placeholder="Enter Your City" name="City" required>
 							<input type="text" placeholder="Enter Your Postal code" name="postal_code" required>
 						</div>
 				</div>
@@ -79,5 +81,6 @@
 				<button type="submit">Submit</button>
 			</form>
 	</section>
+
 </body>
 </html>
